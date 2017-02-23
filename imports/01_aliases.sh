@@ -9,10 +9,10 @@ alias grep='grep --color=auto'
 alias igrep='grep --color=auto -i'
 
 ## LS aliases
-alias l='ls -alF --color=auto'
-alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
-alias ls='ls --color=auto'
+#alias l='ls -alF --color=auto'
+#alias l.='ls -d .* --color=auto'
+#alias ll='ls -l --color=auto'
+#alias ls='ls --color=auto'
 
 ## Safe move and copy commands
 #alias mv='mv -i'
