@@ -14,16 +14,16 @@
 export BFDIR="$HOME/.bash_facilities"
 
 ## Import Bash Aliases
-source "$BFDIR/01_aliases.sh"
+source "$BFDIR/imports/01_aliases.sh"
 
 ## Import Bash Functions
-source "$BFDIR/02_functions.sh"
+source "$BFDIR/imports/02_functions.sh"
 
 ## Import Bash Environment Variables
-source "$BFDIR/03_variables.sh"
+source "$BFDIR/imports/03_variables.sh"
 
 ## Import Configurations
-source "$BFDIR/04_configs.sh"
+source "$BFDIR/imports/04_configs.sh"
 
 ## Import misc scripts
 for file in $BFDIR/scripts.d/*.sh

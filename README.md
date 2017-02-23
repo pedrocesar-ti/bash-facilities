@@ -1,32 +1,30 @@
 Welcome to Bash Facilities
 ==========================
 
-**Hi! This is "bash_facilities"**, a set of scripts to 
-give you a better management of your bash config and 
-init files. 
+This repos is forked from [wesleyit/bash_facilities](https://github.com/wesleyit/bash_facilities) that I liked but I take some things off and create something usefull to me.
 
-Now it is easier to locate and change
-your functions, aliases and configs.
+Idea
+----------
+Give you a better management of your bash config and 
+init files. 
 
 Bash is your friend, go ahead and make it your way!
 
 Requisites
 ----------
+I created a repository to config my machine called [pedrocesar-ti/machine](), and there I guarantee the installation of all tools needed, even if you are in a MacOSX or a Debian bassed Linux. 
 
-If you have any problems, try installing the following dependencies:
-
-`sudo apt-get install curl git bash-completion rbenv fortune-mod cowsay`
-
-If your environment was installed by the Ansible Playbook
-in https://github.com/wesleyit/debian_workstation_devops then you
-should already have those packages.
+The requirements are:
+* curl
+* git
+* bash-completion
+* rbenv
+* nodeenv
 
 Install
 -------
 
 To install, open your terminal (using bash, it will not work on zsh or oh-my-zsh).
 Type:
-
-`curl https://raw.githubusercontent.com/wesleyit/bash_facilities/master/installer.sh | bash`
 
 Then, exit the terminal and open it again. It is done!

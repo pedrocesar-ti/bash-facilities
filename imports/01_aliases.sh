@@ -14,15 +14,10 @@ alias l.='ls -d .* --color=auto'
 alias ll='ls -l --color=auto'
 alias ls='ls --color=auto'
 
-## Open command like in Mac OS X
-# and a reload to re-read the config rc files
-alias open='xdg-open'
-alias reload="source ~/.bashrc"
-
 ## Safe move and copy commands
-alias mv='mv -i'
-alias rm='rm -i'
-alias cp='cp -i'
+#alias mv='mv -i'
+#alias rm='rm -i'
+#alias cp='cp -i'
 
 ## Git aliases
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative"
@@ -38,18 +33,8 @@ alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gpc='git push origin $(git branch | head -n 1 | cut -d " " -f 2-)'
 
-## Cat with color and syntax highlight
-alias ccat='pygmentize -O style=monokai -f console256 -g'
-alias dog='ccat'
-
 ## Vim ignoring global config
 alias vim="vim -u ~/.vimrc"
 
 ## Better Docker management
 alias docker-rma='docker rm -f $(docker ps -aq)' 
-
-## Emacs aliases
-alias em='emacs -nw'
-alias emacs="emacsclient -c -a emacs"
-alias rcemacs="systemctl --user restart emacsd.service"
-

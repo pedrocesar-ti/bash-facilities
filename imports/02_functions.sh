@@ -122,32 +122,6 @@ function unset_proxy() {
 	env | grep -i proxy
 }
 
-function emacs() {
-	## Is the emacs server running?
-	pgrep -l "^emacs$" > /dev/null
-	[ $? -ne 0  ] && emacs --daemon
-
-
-	## Text or X11?
-	[ -z "$DISPLAY"  ] && X11="-t" || X11=""
-
-	## Return a list of all frames on $DISPLAY
-	\emacsclient -e "(frames-on-display-list \"$DISPLAY\")" &>/dev/null
-
-	## Open frames detected, so open files in current frame
-	# or if  no open frames detected, open new frame
-	[ $? -eq 0  ] && \emacsclient --alternate-editor="" -n $X11 "$@" ||
-	\emacsclient --alternate-editor="" -n $X11 -c "$@"
-}
-
-function debupdate() {
-	sudo apt-get update
-	sudo apt-get install -f -y
-	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
-	sudo apt-get autoremove -y
-}
-
 function docker-ip() {
 	for container in $(docker ps -aq)
 	do
