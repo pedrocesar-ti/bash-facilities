@@ -1,5 +1,9 @@
 ## Invoke the global bash completion
-source /usr/share/bash-completion/bash_completion
+if test "$(uname)" = "Darwin"; then
+	source usr/local/etc/bash_completion 
+elif test "$(uname)" = "Linux"; then
+	source /usr/share/bash-completion/bash_completion
+fi
 
 ## Include autocompletion for Amazon API commands
 complete -C aws_completer aws
