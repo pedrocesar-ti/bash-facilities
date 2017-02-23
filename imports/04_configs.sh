@@ -9,6 +9,7 @@ fi
 complete -C aws_completer aws
 
 ## Include rbenv
-export PATH="$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+eval "$(nodenv init -)"
 

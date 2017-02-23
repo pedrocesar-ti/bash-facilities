@@ -1,20 +1,19 @@
-Welcome to Bash Facilities
-==========================
+# bash_facilities
 
-This repos is forked from [wesleyit/bash_facilities](https://github.com/wesleyit/bash_facilities) that I liked but I take some things off and create something usefull to me.
+This repos is forked from [wesleyit/bash_facilities](https://github.com/wesleyit/bash_facilities) that I liked but I took some things off and create something usefull to me.
 
 Idea
 ----------
-Give you a better management of your bash config and 
-init files. 
+Give you a better management of your bash config and init files. 
 
-Bash is your friend, go ahead and make it your way!
+Bash is your friend so go ahead and make it your way!
 
-Requisites
+
+Used by
 ----------
-I created a repository to config my machine called [pedrocesar-ti/machine](), and there I guarantee the installation of all tools needed, even if you are in a MacOSX or a Debian bassed Linux. 
+I've created a repository (also forked from a good idea) to config my machine called [pedrocesar-ti/machine](https://github.com/pedrocesar-ti/machine), and there I guarantee the installation of all tools needed and copy bash_facilities installation, even if you are in a MacOSX or a Debian bassed Linux. 
 
-The requirements are:
+The general requirements are:
 * curl
 * git
 * bash-completion
@@ -23,8 +22,13 @@ The requirements are:
 
 Install
 -------
-
 To install, open your terminal (using bash, it will not work on zsh or oh-my-zsh).
 Type:
+``console
+$ wget https://github.com/pedrocesar-ti/bash_facilities/archive/master.zip
+$ unzip master.zip
+$ cd bash_facilities-master/
+$ ./installer.sh
+```
 
-Then, exit the terminal and open it again. It is done!
+Exit the terminal and open it again. It is done!

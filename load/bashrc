@@ -9,9 +9,6 @@
 # interactive session, otherwise, exit
 [[ $- == *i* ]] || return
 
-## Setup a variable based o OS
-
-
 ## Set the Bash Facilities directory, where all
 # files to be included must be in.
 export BFDIR="$HOME/.bash_facilities"
@@ -43,3 +40,5 @@ done
 ## vim must ignore global vimrc
 alias vim='vim -u ~/.vimrc'
 
+## Ajusting PATH vatiable
+export PATH="$PATH:/usr/local/bin"
