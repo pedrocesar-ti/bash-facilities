@@ -1,6 +1,6 @@
 ## Invoke the global bash completion
 if test "$(uname)" = "Darwin"; then
-	source usr/local/etc/bash_completion 
+	source /usr/local/etc/bash_completion 
 elif test "$(uname)" = "Linux"; then
 	source /usr/share/bash-completion/bash_completion
 fi
@@ -9,6 +9,6 @@ fi
 complete -C aws_completer aws
 
 ## Include rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/usr/local/bin/:$PATH"
 eval "$(rbenv init -)"
 
