@@ -40,5 +40,3 @@ done
 ## vim must ignore global vimrc
 alias vim='vim -u ~/.vimrc'
 
-## Ajusting PATH vatiable
-export PATH="$PATH:/usr/local/bin"
