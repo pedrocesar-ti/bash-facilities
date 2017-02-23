@@ -32,3 +32,4 @@ $ ./setup.sh
 ```
 
 Exit the terminal and open it again. It is done!
+Enjoy! :)
