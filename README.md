@@ -28,7 +28,7 @@ Type:
 $ wget https://github.com/pedrocesar-ti/bash_facilities/archive/master.zip
 $ unzip master.zip
 $ cd bash_facilities-master/
-$ ./installer.sh
+$ ./setup.sh
 ```
 
 Exit the terminal and open it again. It is done!
