@@ -11,7 +11,7 @@
 
 ## Set the Bash Facilities directory, where all
 # files to be included must be in.
-export BFDIR="$HOME/.bash_facilities"
+export BFDIR="$HOME/.bash-facilities"
 
 ## Import Bash Aliases
 source "$BFDIR/imports/01_aliases.sh"

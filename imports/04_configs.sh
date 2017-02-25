@@ -8,8 +8,8 @@ fi
 ## Include autocompletion for Amazon API commands
 complete -C aws_completer aws
 
-## Include rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+## Include rbenv and nodenv
+export PATH="$HOME/.nodenv/bin:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
